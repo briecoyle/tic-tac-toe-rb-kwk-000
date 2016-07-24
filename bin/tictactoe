@@ -1,3 +1,16 @@
 #!/usr/bin/env ruby
 
 require_relative '../lib/tic_tac_toe'
+
+def play[board]
+  until over?(board)
+    turn(board)
+  end
+
+  if won?(board)
+    put "Congrats! You're a winner!"
+  elsif draw?(board)
+    put "Bummer y'all. It's a draw!"
+  else
+  end
+end
